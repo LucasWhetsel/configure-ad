@@ -39,4 +39,17 @@ We will add client 1 to the domain, mydomain.com. We can verify this by checking
 
 ![image](https://github.com/user-attachments/assets/52f83270-51dc-404d-a58a-a5f08b97a072)
 
+Now we login into client-1 using domain admin's credentials (mydomain.com\jane_admin). We go into system settings and allow "domain users" access to remote desktop. 
+
+![image](https://github.com/user-attachments/assets/8770cdfd-a015-4d84-94f1-7c6857465515)
+
+Lastly, to verify that noraml users can RDP into Client-1 we will use a script to generate one thousand users into the domain. We use powershell to run the script and all the users will be added to OU _EMPLOYEES. After the users are created, we will be using one user to Remote desktop into Client-1. 
+
+![image](https://github.com/user-attachments/assets/e5abb540-aac5-41f8-8929-1a77c1351bdb)
+
+We use one of the newly generated users, heh.noh. In order to remote desktop into client-1, the username we use is mydomain.com\heh.noh with the password as Password1. 
+
+![image](https://github.com/user-attachments/assets/5982b220-cca6-49ba-865d-280e27b7e936)
+
+Success!
 
